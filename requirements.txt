@@ -1,7 +1,7 @@
 fastapi
 uvicorn
-paddleocr
+paddleocr3.3.2
 paddlepaddle
-pymongo
+pymongo3.12
 python-multipart
 python-dotenv

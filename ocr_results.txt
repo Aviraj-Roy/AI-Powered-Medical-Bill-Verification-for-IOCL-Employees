@@ -1,420 +1,1001 @@
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
-n
-a
-o
-t
-o
-e
-e
-e
-e
-e
-e
-e
-i
-e
-e
+Narayana
+Patient Name :Mr. Tapan Nandy (10010001143682)
+Bill No : IB100125F001794
+Health
+Particulars
+SAC
+Order date
+Qty
+MRP
+Unit Rate
+Amount (Rs)
+6.
+NICORANDIL-TABLET-SMG-KORANDIL- |GTF3561A / 2026-04-30
+25-06-2025
+1
+19.70
+19.70
+19.70
+(30049099)
+7.
+NEBIVOLOL-TABLET-2.5MG-NEBISTAR- |UAO2746 / 2026-11-30
+25-06-2025
+1
+12.24
+12.24
+12.24
+(30049099)
+8.
+NICORANDIL-TABLET-SMG-KORANDIL- |GTF3561A/ 2026-04-30
+26-06-2025
+2
+19.70
+19.70
+39.40
+(30049099)
+9.
+TICAGRELOR-TABLET-90MG-BRILINTA- |60050562 / 2027-09-30
+26-06-2025
+2
+42.21
+42.21
+84.43
+(30049099)
+[10. ASPIRIN-TABLET-15OMG-ECOSPRIN- |04010926 / 2026-09-30 (30049062)
+26-06-2025
+1
+0.80
+0.80
+0.80
+11. TICAGRELOR-TABLET-90MG-BRILINTA- |60050562 / 2027-09-30
+26-06-2025
+4
+42.21
+42.21
+168.86
+(30049099)
+[12. SODIUM CHLORIDE(NS)-INFUSION-0.9% 500ML-ACULIFE- |1C250650 /
+26-06-2025
+2
+39.04
+39.04
+78.08
+2028-02-29 (30045020)
+13. SODIUM CHLORIDE(NS)-INFUSION (COLLAPSIBLE BAG)-O.9% SOOML-
+26-06-2025
+2
+100.18
+100.18
+200.36
+NORMAL SALINE FREEFLEX BAG- [82UD604604 / 2028-03-31 (30049099)
+[14. NICORANDIL-TABLET-5MG-KORANDIL- |GTF3561A/ 2026-04-30
+26-06-2025
+1
+19.70
+19.70
+19.70
+(30049099)
+15. NEBIVOLOL-TABLET-2.5MG-NEBISTAR- |UA02746 / 2026-11-30
+26-06-2025
+1
+12.24
+12.24
+12.24
+(30049099)
+[16. CILOSTAZOL-TABLET-50MG-CILODOC- |IA240708 / 2026-06-30
+27-06-2025
+1
+20.09
+20.09
+20.09
+(30049099)
+Total
+971.91
+Regulated Pricing Drugs
+1.
+CONTRAST (IOHEXOL)--350MG 5OML-OMNIPAQUE GE- |17003698 /
+25-06-2025
+1
+747.00
+747.00
+747.00
+2027-12-31 (30063000)
+2.
+POVIDONE IODINE SOLUTION-SOLUTION-5% 50OML-POVINANZ UOM-
+25-06-2025
+50
+0.48
+0.48
+24.00
+| N0150274 / 2027-02-28 (30049087)
+3.
+LN/CON-(NA) GEA-EN/NZ-ON-A∃
+25-06-2025
+1
+332.00
+332.00
+332.00
+10-31 (30019091)
+4.
+ROSUVASTATIN+ASPRIN+CLOPIDOGREL-CAPSULE-2OMG+75MG+75MG-
+26-06-2025
+2
+37.00
+37.00
+74.00
+ROSUVA GOLD- |FHC0042 / 2026-12-31 (30049099)
+5.
+ATORVASTATIN-TABLET-40MG-ATOREC- |E16AZ25001 / 2027-02-28
+26-06-2025
+1
+21.25
+21.25
+21.25
+(30049074)
+6.
+CLOPIDOGREL-TABLET-75MG-CLOPITAB- |JB00457 / 2026-07-31
+26-06-2025
+4
+7.45
+7.45
+29.81
+(30049079)
+7.
+LIDOCAINE-INJECTION-2% 3OML-LOX 2%- |SM144613 / 2027-01-31
+26-06-2025
+1
+34.93
+34.93
+34.93
+(30039034)
+8.
+NORADRENALINE-INJECTION-2ML-NORADRENALINE(HARSON) |H510 /
+26-06-2025
+1
+44.80
+44.80
+44.80
+2027-01-31 (30049099)
+9.
+CONTRAST (IOHEXOL)--35OMG 100ML-OMNIPAQUE GE UOM-
+26-06-2025
+100
+14.94
+14.94
+1,494.00
+|17145333 / 2028-02-29 (30063000)
+10. POVIDONE IODINE SOLUTION-SOLUTION-5% 5OOML-POVINANZ UOM-
+26-06-2025
+50
+0.48
+0.48
+24.00
+| N0150274 / 2027-02-28 (30049087)
+11. HEPARIN-INJECTION-25000IU/5ML-HEPARIN (GLAND)- |G1010040 / 2027-
+26-06-2025
+1
+332.00
+332.00
+332.00
+10-31 (30019091)
+12. ATORVASTATIN-TABLET-4OMG-ATOREC- |E16AZ24006 / 2026-10-31
+26-06-2025
+1
+21.25
+21.25
+21.25
+(30049074)
+Total
+3,179.04
+SURGICAL CONSUMABLES
+1.
+CHLORHEXIDINE GLUCONATE+ETHYL ALCOHOL-SOLUTION-2.5%+70%
+25-06-2025
+1
+225.00
+225.00
+225.00
+(100ML)-HOSPISAFE |RHC-25015 / 2028-03-31 (30049087)
+2.
+OUNCE GLASS--200ML-MEDOVATION- |2023213 / 2030-06-30
+25-06-2025
+1
+(39269099)
+12.00
+12.00
+12.00
+3.
+THERMOMETER-.-.-AERO DIGITAL HEMANT SURGICALS(HSIL) |2503O1301
+25-06-2025
+1
+299.00
+/ 2027-12-31 (90251910)
+299.00
+299.00
+Page 2 of 5
+Narayana Institute of Cardiac Sciences
+(A Unlt of Narayana Hrudayalaya LImited) CIN: U8
+Download
+Hospital Address: Narayana Health City, 258/A, Bommasandra Industrial Area, Anekal Taluk,
+Narayana Health App
+Bangalore 560099 I Tel +91 80 712 22222 I Fax +91 80 2783 2648
+Our Accreditations
+H
+Registered Office Address: 258/A, Bommasandra Industrial Area, Anekal Taluk, Bengaluru - 560099
+Appointment
+Email:
+1800 309 0309
+info.nics@narayanahealth.org
+Smart Health Care Solution
+Narayana
+Patient Name :Mr. Tapan Nandy (10010001143682)
+Bill No : IB100125F001794
+Health
+Particulars
+SAC
+Order date
+Qty
+MRP
+Unit Rate
+Amount (Rs)
+4.
+25-06-2025
+1
+85.00
+85.00
+URINAL POT-MALE-.-- [252911464 / 2028-04-30 (90189099)
+85.00
+5.
+ELASTIC ADHESIVE BANDAGE-.-10CM-DYNAPLAST AMARYLLIS- |S250501
+25-06-2025
+1
+550.00
+550.00
+550.00
+/ 2028-04-30 (30051020)
+INTRODUCER NEEDLE--18G-WHITE HUB DL OST18GC DOLPHIN-
+25-06-2025
+1
+252.00
+252.00
+252.00
+6.
+|250S006 / 2028-03-31 (90183990)
+DRESSING SWAB GAUZE-STERILE (4S)-7.5CM X 7.5CM-SGSPO09 BAPUJI
+25-06-2025
+20
+45.00
+45.00
+900.00
+7.
+|041224 /2027-12-04 (30059090)
+INTRODUCER NEEDLE-.-21G-WHITE HUB DL OST21GC DOLPHIN-
+25-06-2025
+1
+252.00
+252.00
+252.00
+8.
+|250S006 /2028-03-31 (90183990)
+IV SET-VENTED PLAIN-.-AHPL005 AMARYLLIS- |AH031F25 / 2028-05-31
+25-06-2025
+2
+225.00
+225.00
+450.00
+9.
+(90183990)
+10. NEEDLE-.-23G X 1.5-SAFEWAY LIFELONG- |062323H / 2028-05-31
+25-06-2025
+1
+5.50
+5.50
+5.50
+(90183100)
+11. SCREEN COVER-.--DISPOSABLE 35103 AMARYLLIS- |SCA35103270525 /
+25-06-2025
+1
+60.00
+60.00
+60.00
+2028-04-30 (90189099)
+12. DRAPE KIT-CATH LAB-.-1801 AMARYLLIS- |CTP1801090625 / 2028-05-31
+25-06-2025
+1
+950.00
+950.00
+950.00
+(63079090)
+13. GLOVES-STERILE-SIZE 6-CARETEX KURIAN- |5D401 / 203O-03-31
+25-06-2025
+2
+99.00
+99.00
+198.00
+(40159099)
+14. ECG ELECTRODES--ADULT-AD2343 ADLISC MEDICAL DEVICES- |0630525
+25-06-2025
+5
+36.96
+36.96
+184.80
+/ 2027-04-30 (90183990)
+15. HAND CARE GLOVES-STERILE-.-PROTECTO SUPER ROMSONS-
+25-06-2025
+2
+16.72
+16.72
+33.44
+|C25C110529 / 2030-02-28 (90183990)
+16. SYRINGE-LL WITH NEEDLE-10ML-MATRIX LIFELONG |12241ODA / 2029-
+25-06-2025
+3
+51.50
+51.50
+154.50
+11-30 (90183100)
+17. SURGICAL BLADE-.-NO 11-GLASSVAN(NIRAJ INDUSTRIES}- |110325 /
+25-06-2025
+1
+7.50
+7.50
+7.50
+2030-02-28 (90189022)
+[18. SYRINGE-PLAIN W/O NEEDLE-1OML-SAFEWAY LIFELONG- |042510DA /
+25-06-2025
+6
+31.25
+31.25
+187.50
+2030-03-31 (90183100)
+19. I V CATHETER-.-20G-(45MM) JELCO 4039 PORTEX- |6022857 / 2029-05-
+25-06-2025
+1
+117.00
+117.00
+117.00
+24 (90183990)
+20. BAND AID-NON WATER PROOF REGULAR-.-.- |198C9029 / 2027-12-31
+26-06-2025
+5
+2.00
+2.00
+10.00
+(30059090)
+21. DRESSING SWAB GAUZE-STERILE (4S)-7.5CM X 7.5CM-SGSPO09 BAPUJI
+26-06-2025
+20
+45.00
+45.00
+900.00
+|041224 / 2027-12-04 (30059090)
+22. HAND CARE GLOVES-STERILE-.-PROTECTO SUPER ROMSONS-
+26-06-2025
+4
+16.72
+16.72
+66.88
+|C25C110529 / 2030-02-28 (90183990)
+23. ELASTIC ADHESIVE BANDAGE-,-10CM-DYNAPLAST AMARYLLIS- |S250501
+26-06-2025
+1
+550.00
+550.00
+550.00
+/ 2028-04-30 (30051020)
+24. STOP COCK-3 WAY-100CM EXTENSION-ROMSONS- |K25A011054 / 2029-
+26-06-2025
+1
+410.00
+410.00
+410.00
+12-31 (90189099)
+25. INTRODUCER NEEDLE-.-21G-WHITE HUB DL OST21GC DOLPHIN-
+26-06-2025
+1
+252.00
+252.00
+252.00
+|250S006 / 2028-03-31 (90183990)
+26. IV SET-VENTED PLAIN-.-AHPL005 AMARYLLIS- |AH031F25 / 2028-05-31
+26-06-2025
+3
+225.00
+225.00
+675.00
+(90183990)
+27. SURGICAL BLADE-.-NO 11-GLASSVAN(NIRAJ INDUSTRIES)- |110325 /
+26-06-2025
+1
+7.50
+7.50
+7.50
+2030-02-28 (90189022)
+28. SYRINGE-LL WITH NEEDLE-2ML-SAFEWAY LIFELONG- |052502BJ / 2030-
+26-06-2025
+2
+15.00
+15.00
+30.00
+04-30 (90183100)
+29. SYRINGE-PLAIN W/O NEEDLE-1OML-SAFEWAY LIFELONG- |042510DA /
+26-06-2025
+4
+31.25
+31.25
+125.00
+2030-03-31 (90183100)
+30. ACTALYKE REAGENT TUBES--BLACK-ACT BL- |106-24 / 2027-05-31
+26-06-2025
+1
+320.00
+320.00
+320.00
+(90189093)
+31. ECG ELECTRODES--ADULT-AD2343 ADLISC MEDICAL DEVICES- |0630525
+26-06-2025
+5
+36.96
+36.96
+184.80
+/ 2027-04-30 (90183990)
+Page 3 of 5
+Narayana Institute of Cardiac Sciences
+Download
+(A Un1 of Narayana Hrudayalaya LImited) CIN: U85110KA2000PLC027497
+Narayana Health App
+Hospital Address: Narayana Heath City, 258/A, Bommasandra Industrial Area, Anekal Taluk,
+Our Accreditations
+Bangalore 560099 | Tel +91 80 712 22222 I Fax +91 80 2783 2648
+Registered Office Address: 258/A, Bommasandra Industrial Area, Anekal Taluk, Bengaluru - 560099
+8
+Email:
+x
+Appointment
+1800 309 0309
+info.nics@narayanahealth.org
+Smart Health Care Solution
+Narayana
+Patient Name :Mr. Tapan Nandy (10010001143682)
+Bill No : IB100125F001794
+Health
+SAC
+Order date
+Qty
+MRP
+Unit Rate Amount (Rs)
+Particulars
+26-06-2025
+2
+99.00
+99.00
+198.00
+32. GLOVES-STERILE-SIZE 6-CARETEX KURIAN- [5D401 / 203O-03-31
+(40159099)
+26-06-2025
+1
+950.00
+950.00
+950.00
+33. DRAPE KIT-CATH LAB-.-1801 AMARYLLIS- |CTP1801090625 / 2028-05-31
+(63079090)
+2
+99.00
+99.00
+198.00
+34. GLOVES-STERILE-SIZE 6.5-CARETEX KURIAN- |5D401 / 2030-03-31
+26-06-2025
+(40151100)
+2
+99.00
+99.00
+198.00
+35. GLOVES-STERILE-SIZE 7.5-CARETEX KURIAN- |5D401 / 2030-03-31
+26-06-2025
+(40151100)
+26-06-2025
+1
+5.50
+5.50
+5.50
+36. NEEDLE-.-23G X 1.5-SAFEWAY LIFELONG- |062323H / 2028-05-31
+(90183100)
+26-06-2025
+2
+450.00
+450.00
+900.00
+37. SURGEON GOWN-.--1101 AMARYLLIS- |DSG1101280525 / 2028-04-30
+(62101000)
+26-06-2025
+10
+6.00
+6.00
+60.00
+38. HEAD CAP-.-SISTER/SURGEON-.- |SC005260525 / 2028-04-30 (62104090)
+26-06-2025
+1
+3.50
+3.50
+3.50
+39. NEEDLE-.-26G X 0.5-SAFEWAY LIFELONG- |022526E / 2030-01-31
+(90183100)
+26-06-2025
+10
+10.00
+10.00
+100.00
+40. SURGICAL FACE MASK-3PLY-.-BLUE WITH TIE FMO21 AMARYLLIS-
+|FM021180525 / 2028-04-30 (62104090)
+41. SCREEN COVER---DISPOSABLE 35103 AMARYLLIS- |SCA35103270525 /
+26-06-2025
+1
+60.00
+60.00
+60.00
+2028-04-30 (90189099)
+42. SYRINGE-LL W/O NEEDLE-2OML-SAFEWAY LIFELONG- |052520-BC / 2030-
+26-06-2025
+1
+47.00
+47.00
+47.00
+04-30 (90183100)
+43. SYRINGE-LL WITH NEEDLE-10ML-MATRIX LIFELONG |122410DA / 2029-
+26-06-2025
+3
+51.50
+51.50
+154.50
+11-30 (90183100)
+44. GUIDING CATHETER-EBU3.5-6FR-LAUNCHER LA6EBU35 MEDTRONIC-
+26-06-2025
+1
+8376.00
+8376.00
+8,376.00
+|230860382 / 2027-03-10 (90183920)
+45. IV CATHETER-.-20G-(45MM) JELCO 4039 PORTEX- |6022857 / 2029-05-
+26-06-2025
+1
+117.00
+117.00
+117.00
+24 (90183990)
+46. PTCA GUIDE WIRE-J TIP-0.014 X 190CM-HI TORQUE BMW 1001780J
+26-06-2025
+1
+6340.00
+6340.00
+6,340.00
+ABBOTT- |4111371 / 2026-10-31 (90183990)
+47. HAND CARE GLOVES-STERILE-.-PROTECTO SUPER ROMSONS-
+26-06-2025
+5
+16.72
+16.72
+83.60
+|C25C110529 /2030-02-28 (90183990)
+48. WET WIPES-.-32CM X 32CM-LYON BDB001 BAPUJI |002 / 2027-03-01
+26-06-2025
+1
+600.00
+600.00
+600.00
+(56012110)
+Total
+26,845.52
+Total Hospital Charges for Rendered Services/Items :
+351,626.27
+Discount - Patient: 0.00, Sponsor:29,522.58
+Less Discount :
+29,522.58
+GSTIN: 29AABCN1685J1Z4
+Total Bill Amount Including Taxes before round off :
+322,103.69
+Sponsor Payable :
+295,551.00
+Patient Round Off :
+0.31
+Patient Payable :
+26,553.00
+Amount in words: Rupees Twenty Six Thousand Five Hundred Fifty Three Rupees Only
+Total savings: Rs. 0.00
+Receipt No.
+Date
+Receipt Amount
+Adjusted Amount
+1.
+RCPI-1001-2506001906
+27-06-2025 05:59 PM
+26,553.00
+26,553.00
+Total
+26,553.00
+Balance Details
+Gross bill amount :
+351,626.27
+Less Discount :
+29,522.58
+Sponsor Amount :
+295,551.00
+Net Amount :
+26,553.00
+Page 4 of 5
+Narayana Institute of Cardiac Sciences
+(A Unl1 of Narayana Hrudayalaya LImited) CIN: U85110KA
+Download
+Hospital Address: Narayana Health City, 258/A, Bommasandra Industrial Area, Anekal Taluk,
+Narayana Health App
+Our Accreditations
+Bangalore 560099 I Tel +91 80 712 22222 I Fax +91 80 2783 2648
+2*
+Registered Office Address: 258/A, Bommasandra Industrial Area, Anekal Taluk, Bengaluru - 560099
+Appointment
+Email:
+1800 309 0309
+info,nics@narayanahealth.org
+Smart Health Care Solution
+Narayana
+Patient Name :Mr. Tapan Nandy (10010001143682)
+Bill No : IB100125F001794
+Health
+Amount Paid :
+26,553.00
+Balance To Pay :
+0.00
+NOTE:
+GST on Bed Charges above 5K per day (except ICU).
+Prepared By: Jayanth Kumar B, 332720 | Prepared On: 27-06-2025 18:00 |
+Scan to download NH Care app
+Published By: Administrator, admin | Published On: 09-01-2026 12:01 |
+Access your Lab reports,
+prescription and book appointment
+Page 5 of 5
+Narayana Institute of Cardiac Sciences
+Download
+(A Unit of Narayana Hrudayalaya LImited) CIN: U85110KA2000PLCD27497
+Narayana Health App
+Hospital Address: Narayana Health City, 258/A, Bommasandra Industrial Area, Anekal Taluk,
+Our Accreditations
+Bangalore 560099 | Tel +91 80 712 22222 I Fax +91 80 2783 2648
+Registered Office Address: 258/A, Bommasandra Industrial Area, Anekal Taluk, Bengaluru - 560099
+Appointment
+Email:
+1800 309 0309
+info.nics@narayanahealth.org
+Smart Health Care Solution
+DUPLICATE
+PHARMACY BILL CUM RECEIPT
+MSMC-NARAYANA HRUDAYALAYA LTD- Ground Floor OP PharmaCy-MSH
+258/A, Warehouse, Room No. 4, B Block, Bommasandra Industrial Area, Anekal Taluk, , Karnataka,
+India -560099
+Patient Name
+: Mr. Tapan Nandy
+Bill No
+: PA500225F023038
+Receipt No
+: RCPP-5002-2506023840
+Patient MRN
+: 10010001143682
+Visit No
+: AMB-001
+Gender|Age|DoB
+: male[62y 4m|17/02/63
+Patient Phone No
+: 9679086278
+Date
+: 27-06-2025 08:26 PM
+CGST
+Patient
+Patient
+Unit
+SGST
+Amount
+Sch.
+Batch/Exp
+Qty
+Particulars
+(%)
+(Rs)
+Discount
+Amt (Rs)
+Rate
+(%)
+ConsuItant Name: Dr. Pradeep Kumar Shetty Karkal
+2964M005/
+24.01
+6
+9
+1440.75
+288.15
+1152.60
+H
+09
+NICORANDIL-TABLET-5MG-NIKORAN- (30049099)
+2026-09-30
+2I15M001/
+30
+12.05
+361.50
+72.30
+289.20
+NEBIVOLOL-TABLET-2.5MG-NEBICARD- (30049079)
+H
+6
+9
+2027-02-28
+5C10266/
+237.30
+949.20
+CILOSTAZOL-TABLET-50MG-PLETOZ- (30049099)
+H
+09
+19.78
+6
+9
+1186.50
+2027-07-31
+IA00082A/
+30
+21.99
+6
+9
+659.76
+131.95
+527.81
+ATORVASTATIN-TABLET-40MG-ATORVA- (30049079)
+H
+2028-03-31
+60050562/
+70
+42.21
+6
+9
+2955.00
+591.00
+2364.00
+TICAGRELOR-TABLET-90MG-BRILINTA- (30049099)
+H
+2027-09-30
+BENFOTIAMIN+VITB12+ALA+FA+INOSITOL+VITB6-
+EEC-
+2412161/
+06
+22.00
+6
+9
+1980.00
+396.00
+1584.00
+CAPSULE-100MG+1000MCG+200MG+1.
+H
+5MG+100MG+3MG-NEURONZ PLUS- (30045039)
+2026-05-31
+Total :
+8583.51
+Summary
+Discount :
+1716.70
+Tax - $GST_6.0: 367.87, CGST_6.0: 367.87
+Net Amount :
+6866.81
+Discount - Patient: 1716.70, Sponsor: 0.00
+Sponsor Payable :
+0.00
+Payment Mode - Paid via CARD Rs 6867.00
+Patient Round Off :
+0.19
+Patient Payable Amt : 6867.00
+Total savings: Rs. 1716.70
+Amount in words: Rupees Six Thousand Eight Hundred Sixty Seven Rupees Only
+Page 1 of 2
+Narayana
+BILL AND RECEIPT
+one
+Narayana Clinic, Electronic City- OPD-GF
+Health
+Patient Name
+: Tapan Nandy
+Bill No
+: IA301025G000545
+Patient MRN
+: 10010001143682
+Billing Date
+: 02-07-2025 08:30 AM
+Gender|Age|DoB
+: male [62y 4m|17/02/63
+Tariff Class
+:OPD
+Patient Phone No
+: 9679086278
+Consultant
+: ,Dr. Santosh K M
+Address
+: Siliguri, Darjeeling, West Bengal, India,
+Visit No
+:OP-001
+734001
+Plan: Arya 3 | Sponsor : OP CASH (1097_C)
+Non-
+Member
+Order date
+Member
+Particulars
+Qty Unit Rate
+Member
+/Other
+Amount
+Amount(Rs)
+Discount
+Consultation
+[1. CONSULTATION - FIRST VISIT | Dr. SantOsh K M
+02-07-2025
+1
+500.00
+500.00
+75.00
+425.00
+Total
+425.00
+Non Member Amount :
+500.00
+Discount - Patient: 75.00, Sponsor:0.00
+Less Discount :
+75.00
+GSTIN: 29AAICN6968M1ZF
+Total Bill Amount Including Taxes before round off :
+425.00
+Sponsor Payable :
+0.00
+Patient Round Off :
+0.00
+Member Amount :
+425.00
+Paid Via Cash :
+0.00
+Paid Via Health Points :
+425.00
+Amount in words: Rupees Four Hundred Twenty Five Rupees Only
+Total savings: 500.00 (100.00% of total bill)
+Receipt No.
+Receipt Date
+Mode
+Reference No.
+Amount(Rs)
+1.
+RCPO-3010-2507000394
+02-07-2025 08:30 AM
+health points
+425.00
+Total
+425.00
+Balance Details
+Gross bill amount :
+500.00
+Less Discount :
+75.00
+Sponsor Amount :
+0.00
+Net Amount :
+425.00
+Amount Paid :
+425.00
+Balance To Pay :
+0.00
+Prepared By: Administrator, admin | Prepared On: 02-07-2025 08:30
+Scan to download NH Care app
+Published By: Administrator, admin | Published On: 09-01-2026 12:01 |
+Access your Lab reports,
+prescription and book appointment
+Page 1 of 1
+NH Integrated Care Private Limited
+www.narayanaone.health
+C 7026 222 222
+Registered Office: 258/A, Hosur Road, Bommasandra Industrial Area, Anekal
+info@narayanaone.health
+Taluk, Bengaluru, Karnataka - 560099
+CIN: U85190KA2023PTC170155 ] GSTIN: 29AA1CN6968M1ZF
+Corporate Office: 261/A, 2nd Floor. Bommasandra Industrial Area, Anekal Taluk,
+Chandapura | Electronic City [ Haralur | Hosur | HSR Layout [
+Bengaluru, Karnataka - 560099
+Jayanagar | Kudlu | Manipal County | Sarjapur
+Narayana
+BILL AND RECEIPT
+Narayana Institute of Cardiac Sciences, Bangalore- OPD-EXE-1F
+Health
+No. 258/A, Bommasandra Industrial Area, Hosur Road, , Karnataka, India -560099
+: Tapan Nandy
+Bill No
+: IA100125G028320
+Patient Name
+Patient MRN
+: 10010001143682
+Billing Date
+: 23-07-2025 05:05 AM
+Gender|Age|DoB
+: male[62y 5m|17/02/63
+Tariff Class
+: Executive OPD
+Patient Phone No
+Consultant
+: ,Dr. Pradeep Kumar Shetty Karkal
+: 9679086278
+Address
+: Siliguri, Darjeeling, West Bengal, India,
+Visit No
+: OP-004
+734001
+Plan: Arya 3 | Sponsor : OP CASH (1097_C)
+Order date
+Qty
+Unit Rate
+Amount(Rs)
+Particulars
+Consultation
+23-07-2025
+1
+3,000.00
+3,000.00
+1. CONSULTATION - REVISIT | Dr. Pradeep Kumar Shetty Karkal
+Total
+3,000.00
+Total Hospital Charges for Rendered Services/Items :
+3,000.00
+Less Discount :
+450.00
+Discount - Patient: 450.00, Sponsor:0.00
+Total Bill Amount Including Taxes before round off :
+2,550.00
+G$TIN: 29AABCN1685J1Z4
+0.00
+Sponsor Payable :
+0.00
+Patient Round Off :
+Patient Payable :
+2,550.00
+Amount in words: Rupees Two Thousand Five Hundred Fifty Rupees Only
+Total savings: Rs. 450.00
+Receipt No.
+Date
+Receipt Amount
+Adjusted Amount
+1.
+RCPO-1001-2507021184
+18-07-2025 11:37 AM
+2,550.00
+2,550.00
+Total
+2,550.00
+Balance Details
+Gross bill amount :
+3,000.00
+Less Discount :
+450.00
+Sponsor Amount :
+0.00
+Net Amount :
+2,550.00
+Amount Paid :
+2,550.00
+Balance To Pay :
+0.00
+Prepared By: Administrator, admin | Prepared On: 23-07-2025 05:05 I
+Scan to download NH Care app
+Published By: Administrator, admin | Published On: 09-01-2026 12:00 |
+Access your Lab reports,
+prescription and book appointment
+Page 1 of 1
+Narayana Institute of Cardiac Sciences
+Download
+Narayana Health App
+(A Unl1 of Narayana Hrudayalaya LImited) CIN: U85110KA2000PLC027497
+Hospital Address: Narayana Health City, 258/A, Bommasandra Industrial Area, Anekal Taluk,
+Our Accreditations
+Bangalore 560099 | Tel +91 80 712 22222 I Fax +91 80 2783 2648
+Registered Office Address: 258/A, Bommasandra Industrial Area, Anekal Taluk, Bengaluru - 560099
+Appointment
+Email:
+1800 309 0309
+info.nics@narayanahealth.org
+Smart Health Care Solution

@@ -1,153 +1,200 @@
 from paddleocr import PaddleOCR
-import traceback
 import os
+import traceback
+import numpy as np
 
-# Initialize PaddleOCR
+# -------------------------
+# OCR INIT (PaddleOCR 3.3.2)
+# -------------------------
 ocr = PaddleOCR(use_angle_cls=True, lang="en")
 
-def _get_top_y(box):
-    """Extract the minimum Y coordinate from a bounding box"""
-    if not box:
-        return 0
-    try:
-        if isinstance(box, (list, tuple)) and len(box) > 0:
-            if isinstance(box[0], (list, tuple)):
-                # Box format: [[x1,y1], [x2,y2], [x3,y3], [x4,y4]]
-                return min(point[1] for point in box)
-            elif len(box) >= 2:
-                # Flat format: [x1, y1, x2, y2, ...]
-                return box[1]
-        return 0
-    except (IndexError, TypeError, ValueError):
-        return 0
 
-def _group_lines_into_blocks(lines, y_threshold=18):
+# -------------------------
+# Geometry helpers
+# -------------------------
+def _top_y(box):
+    if box is None:
+        return 0.0
+    try:
+        if isinstance(box, np.ndarray):
+            if box.size == 0:
+                return 0.0
+            return float(box[:, 1].min())
+        if isinstance(box, (list, tuple)) and len(box) > 0:
+            return float(min(p[1] for p in box))
+    except Exception:
+        pass
+    return 0.0
+
+
+def _left_x(box):
+    if box is None:
+        return 0.0
+    try:
+        if isinstance(box, np.ndarray):
+            if box.size == 0:
+                return 0.0
+            return float(box[:, 0].min())
+        if isinstance(box, (list, tuple)) and len(box) > 0:
+            return float(min(p[0] for p in box))
+    except Exception:
+        pass
+    return 0.0
+
+
+def _height(box):
+    if box is None:
+        return 0.0
+    try:
+        if isinstance(box, np.ndarray):
+            if box.size == 0:
+                return 0.0
+            ys = box[:, 1]
+            return float(ys.max() - ys.min())
+        if isinstance(box, (list, tuple)) and len(box) > 0:
+            ys = [p[1] for p in box]
+            return float(max(ys) - min(ys))
+    except Exception:
+        pass
+    return 0.0
+
+
+# -------------------------
+# Normalize PaddleOCR output
+# -------------------------
+def _normalize_page(page_res):
+    lines = []
+
+    if isinstance(page_res, dict) and "rec_texts" in page_res:
+        texts = page_res.get("rec_texts", [])
+        scores = page_res.get("rec_scores", [])
+        boxes = page_res.get("rec_polys", [])
+
+        for i, text in enumerate(texts):
+            if not text.strip():
+                continue
+            lines.append({
+                "text": text.strip(),
+                "confidence": float(scores[i]) if i < len(scores) else 1.0,
+                "box": boxes[i]
+            })
+
+    return lines
+
+
+# -------------------------
+# Row clustering (Y-axis)
+# -------------------------
+def _cluster_rows(lines):
     if not lines:
         return []
-    valid_lines = [line for line in lines if line.get("box") is not None]
-    if not valid_lines:
-        return []
-    try:
-        sorted_lines = sorted(valid_lines, key=lambda x: _get_top_y(x["box"]))
-    except Exception as e:
-        print(f"⚠️ Warning: Could not sort lines: {e}")
-        sorted_lines = valid_lines
 
-    blocks = []
-    current_block = [sorted_lines[0]]
-    for line in sorted_lines[1:]:
-        prev_y = _get_top_y(current_block[-1]["box"])
-        curr_y = _get_top_y(line["box"])
-        if prev_y == 0 or curr_y == 0:
-            blocks.append(current_block)
-            current_block = [line]
-            continue
-        if abs(curr_y - prev_y) <= y_threshold:
-            current_block.append(line)
+    for l in lines:
+        l["_y"] = _top_y(l["box"])
+        l["_h"] = _height(l["box"])
+
+    avg_height = sum(l["_h"] for l in lines) / max(len(lines), 1)
+    row_threshold = avg_height * 0.8 if avg_height > 0 else 15
+
+    lines.sort(key=lambda x: x["_y"])
+
+    rows = []
+    current = [lines[0]]
+
+    for line in lines[1:]:
+        prev = current[-1]
+        if abs(line["_y"] - prev["_y"]) <= row_threshold:
+            current.append(line)
         else:
-            blocks.append(current_block)
-            current_block = [line]
-    blocks.append(current_block)
-    return blocks
+            rows.append(current)
+            current = [line]
 
-def _extract_page_data(page_res):
-    """
-    Helper to extract lines from a PaddleOCR 3.x result object/dict.
-    Ensures we get a list of [box, (text, conf)] to avoid single-letter iteration.
-    """
-    # If it's already a list (Classic PaddleOCR 2.x format), return as is
-    if isinstance(page_res, list):
-        return page_res
-    
-    # Try to get data as a dictionary (PaddleOCR 3.x Result objects often have .res or can be converted)
-    res_dict = page_res
-    if not isinstance(page_res, dict) and hasattr(page_res, 'to_dict'):
-        res_dict = page_res.to_dict()
-    elif not isinstance(page_res, dict) and hasattr(page_res, 'res'):
-        res_dict = page_res.res
+    rows.append(current)
 
-    # Extraction Logic 1: Standard 'dt_polys' and 'rec_res' (Most 3.x versions)
-    if isinstance(res_dict, dict) and 'dt_polys' in res_dict and 'rec_res' in res_dict:
-        return [[box, rec] for box, rec in zip(res_dict['dt_polys'], res_dict['rec_res'])]
-    
-    # Extraction Logic 2: 'rec_texts' and 'rec_polys' (Some specific PP-Structure outputs)
-    if isinstance(res_dict, dict) and 'rec_texts' in res_dict:
-        texts = res_dict.get('rec_texts', [])
-        scores = res_dict.get('rec_scores', [])
-        boxes = res_dict.get('rec_polys', [])
-        return [[boxes[i] if i < len(boxes) else [], (texts[i], scores[i] if i < len(scores) else 1.0)] 
-                for i in range(len(texts))]
+    for l in lines:
+        l.pop("_y", None)
+        l.pop("_h", None)
 
-    return []
+    return rows
 
+
+# -------------------------
+# Column segmentation
+# -------------------------
+def _split_columns(row, date_x):
+    row.sort(key=lambda l: _left_x(l["box"]))
+
+    description_parts = []
+    numeric_parts = []
+
+    for line in row:
+        if _left_x(line["box"]) < date_x:
+            description_parts.append(line["text"])
+        else:
+            numeric_parts.append(line["text"])
+
+    return description_parts, numeric_parts
+
+
+# -------------------------
+# Main OCR pipeline
+# -------------------------
 def run_ocr(img_paths):
     """
-    Processes multi-page PDFs/images using predict() and semantic block grouping.
+    Multi-page OCR with semantic bill-item grouping
     """
     if isinstance(img_paths, str):
         img_paths = [img_paths]
 
     all_lines = []
-    raw_text_list = []
+    item_blocks = []
 
+    # -------- OCR --------
     for img_path in img_paths:
         try:
-            abs_path = os.path.abspath(img_path)
-            # Use predict() for PaddleOCR 3.x
-            results = ocr.predict(abs_path)
-            
-            if not results:
-                continue
+            results = ocr.predict(os.path.abspath(img_path))
 
-            # In PaddleOCR 3.x, predict() returns a list where each item is one page
-            for page_res in results:
-                # 1. Convert the page object/dict into a list of lines
-                page_data = _extract_page_data(page_res)
-                
-                # 2. Process each line using logic from your 2nd code snippet
-                for line in page_data:
-                    try:
-                        # [ [box], (text, confidence) ]
-                        if isinstance(line, (list, tuple)) and len(line) > 1:
-                            box = line[0]
-                            text_info = line[1] # The (text, confidence) tuple
-                            
-                            # Snippet 2 Unpacking Logic
-                            if isinstance(text_info, (tuple, list)):
-                                text = str(text_info[0])
-                                confidence = float(text_info[1])
-                            else:
-                                text = str(text_info)
-                                confidence = 1.0
-                                
-                            if not text.strip():
-                                continue
+            if hasattr(results, "to_dict"):
+                results = results.to_dict()
 
-                            line_data = {
-                                "text": text,
-                                "confidence": confidence,
-                                "box": box
-                            }
-                            all_lines.append(line_data)
-                            raw_text_list.append(text)
-                    except Exception:
-                        continue
-        except Exception as e:
+            for page in results:
+                page_lines = _normalize_page(page)
+                all_lines.extend(page_lines)
+
+        except Exception:
             traceback.print_exc()
-            continue
 
     if not all_lines:
         return {"raw_text": "", "lines": [], "item_blocks": []}
 
-    # Group into blocks (Snippet 1 logic)
-    blocks = _group_lines_into_blocks(all_lines)
-    item_blocks = []
-    for block in blocks:
-        merged_text = " ".join(line["text"] for line in block)
-        item_blocks.append({"text": merged_text, "lines": block})
+    raw_text = "\n".join(l["text"] for l in all_lines)
+
+    # -------- Grouping --------
+    rows = _cluster_rows(all_lines)
+
+    # Estimate DATE column X (anchor)
+    date_candidates = [
+        _left_x(l["box"])
+        for l in all_lines
+        if "-" in l["text"] and len(l["text"]) == 10
+    ]
+    date_x = min(date_candidates) if date_candidates else 250
+
+    for row in rows:
+        desc, nums = _split_columns(row, date_x)
+
+        if not desc or not nums:
+            continue
+
+        item_blocks.append({
+            "text": " ".join(desc + nums),
+            "description": " ".join(desc),
+            "columns": nums,
+            "lines": row
+        })
 
     return {
-        "raw_text": "\n".join(raw_text_list),
+        "raw_text": raw_text,
         "lines": all_lines,
         "item_blocks": item_blocks
     }

@@ -3,13 +3,13 @@ from app.ocr.paddle_engine import run_ocr
 
 
 def test_ocr_processing():
-    print("🔍 Starting OCR Test ---\n")
+    print(" Starting OCR Test ---\n")
 
     images_dir = "uploads/processed"
 
     # Check if directory exists
     if not os.path.exists(images_dir):
-        print(f"❌ ERROR: Directory not found: {images_dir}")
+        print(f" ERROR: Directory not found: {images_dir}")
         print(f"   Current working directory: {os.getcwd()}")
         return
 
@@ -22,7 +22,7 @@ def test_ocr_processing():
     ])
 
     if not image_paths:
-        print(f"❌ No bill page images found in {images_dir}")
+        print(f" No bill page images found in {images_dir}")
         print(f"   Files in directory: {all_files}")
         return
 
@@ -36,7 +36,7 @@ def test_ocr_processing():
         result = run_ocr(image_paths)
 
         if not result["raw_text"].strip():
-            print("⚠️  WARNING: No text was extracted!")
+            print("  WARNING: No text was extracted!")
             print("   This could mean:")
             print("   - Images are corrupted or empty")
             print("   - Images are not readable (wrong format)")
@@ -67,10 +67,10 @@ def test_ocr_processing():
         output_file = "ocr_results.txt"
         with open(output_file, "w", encoding="utf-8") as f:
             f.write(result["raw_text"])
-        print(f"\n💾 Results saved to: {output_file}")
+        print(f"\n Results saved to: {output_file}")
 
     except Exception as e:
-        print(f"❌ ERROR during OCR processing: {str(e)}")
+        print(f" ERROR during OCR processing: {str(e)}")
         import traceback
         traceback.print_exc()
 
