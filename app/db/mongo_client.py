@@ -83,10 +83,15 @@ class MongoDBClient:
 
         Uses:
         - $setOnInsert for immutable metadata
-        - $set for computed fields
-        - $addToSet/$each for append-only items & payments (dedupe via stable item_id/payment_id)
+        - $set for computed fields (header, patient, subtotals, summary, grand_total)
+        - $addToSet/$each for append-only items (dedupe via stable item_id)
 
         NOTE: uses `_id == upload_id` to guarantee exactly one doc per upload.
+
+        Schema notes (v2):
+        - Payments are NOT stored (removed per choice C to prevent total pollution)
+        - Discounts are stored in summary.discounts (not in items or totals)
+        - grand_total reflects only billable items
         """
 
         data = self._validate_and_transform(bill_data)
@@ -94,10 +99,11 @@ class MongoDBClient:
         header = data.get("header", {}) or {}
         patient = data.get("patient", {}) or {}
         items = data.get("items", {}) or {}
-        payments = data.get("payments", []) or []
+        summary = data.get("summary", {}) or {}
 
-        # Build $addToSet update for each category
-        add_to_set: Dict[str, Any] = {"payments": {"$each": payments}}
+        # Build $addToSet update for each item category only
+        # NOTE: Payments are intentionally NOT stored (choice C)
+        add_to_set: Dict[str, Any] = {}
         for category, arr in items.items():
             if not isinstance(arr, list):
                 continue
@@ -111,7 +117,7 @@ class MongoDBClient:
                 "upload_id": upload_id,
                 "created_at": now,
                 "source_pdf": data.get("source_pdf"),
-                "schema_version": data.get("schema_version", 1),
+                "schema_version": data.get("schema_version", 2),  # Bump to v2
             },
             "$set": {
                 "updated_at": now,
@@ -120,13 +126,16 @@ class MongoDBClient:
                 "header": header,
                 "patient": patient,
                 "subtotals": data.get("subtotals", {}),
-                "summary": data.get("summary", {}),
+                "summary": summary,  # Contains discounts info
                 "grand_total": data.get("grand_total", 0.0),
                 "raw_ocr_text": data.get("raw_ocr_text"),
                 "status": data.get("status", "complete"),
             },
-            "$addToSet": add_to_set,
         }
+
+        # Only add $addToSet if there are items to add
+        if add_to_set:
+            update["$addToSet"] = add_to_set
 
         self.collection.update_one({"_id": upload_id}, update, upsert=True)
         return upload_id
